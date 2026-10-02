@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Lighting System</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f7;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            flex: 1;
+        }
+
+        h2 {
+            text-align: center;
+            color: #444;
+        }
+
+        #reloadImage {
+            width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Smart Lighting System</h1>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Camera</h2>
+
+        <img id="reloadImage" src="" alt="Camera">
+
+        <p style="text-align:center;">
+            Image updated every 5 seconds
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>People detected</h2>
+
+        <canvas id="personCountChart"></canvas>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
